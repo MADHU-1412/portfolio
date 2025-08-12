@@ -1,0 +1,630 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #171717;
+    color: #FFFFFF;
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 46px;
+    left: 38.5px;
+    right: 38.5px;
+    z-index: 1000;
+    background: rgba(97, 97, 97, 0.2);
+    backdrop-filter: blur(57px);
+    border-radius: 20px;
+    padding: 8px 22px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+.nav-pic {
+    width: 224px;
+    height: 70px;
+    border-radius: 19px;
+    object-fit: cover;
+    display: block;
+    opacity: 1 !important;
+}
+
+.nav-links {
+    display: flex;
+    gap: 67px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4263099034627278em;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+    max-width: 790px;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.171875em;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 785px;
+}
+
+.hero-description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4263099034627278em;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 790px;
+}
+
+.linkedin-link {
+  display: flex;
+    align-items: center;
+    justify-content: flex-start; /* left inside container */
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 0;
+    color: #fff; /* white text */
+    text-decoration: underline;
+    text-decoration-color: #fff; /* white underline */
+
+}
+.linkedin-container { /* parent wrapper */
+    display: flex;
+    justify-content: flex-start; /* push link to left of page */
+}
+
+.linkedin-text {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.4263099670410155em;
+    color: #FFFFFF;
+}
+
+.linkedin-icon {
+    width: 37px;
+    height: 37px;
+}
+
+.linkedin-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Work Section */
+.work-section {
+    padding: 0 113px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.171875em;
+    color: #FFFFFF;
+    margin-bottom: 95px;
+    margin-left: 50px;
+}
+
+.project {
+    margin-bottom: 272px;
+    width: 100%;
+}
+
+.project-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    width: 100%;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 320px;
+    flex-shrink: 0;
+}
+
+.project-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.171875em;
+    color: #FFFFFF;
+}
+
+.project-title.fintrust {
+    color: #4B97EF;
+}
+
+.project-title.zensync {
+    font-family: 'Poppins', sans-serif;
+    color: #F9C407;
+    line-height: 1.5em;
+}
+
+.project-description {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.171875em;
+    color: #FFFFFF;
+    max-width: 251px;
+}
+
+.project-cta {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 223px;
+    height: 61px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cta-text {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.2119999638310186em;
+    color: #FFFFFF;
+    margin-right: 0;
+    text-decoration: underline;
+    text-decoration-color: #ffffff; /* underline color */
+    text-decoration-thickness: 2px; /* underline thickness */
+    text-underline-offset: 3px; /* gap between text and underline */
+}
+
+.cta-arrow {
+    width: 61px;
+    height: 61px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-arrow svg {
+    width: 100%;
+    height: 100%;
+}
+
+.project-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 692px;
+    height: 504px;
+}
+
+.image-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(177, 177, 177, 0.65);
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-clip: padding-box;
+}
+
+.image-border::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/* Project 1 specific styles */
+.project-1 .phone-mockup {
+    position: absolute;
+    top: 32px;
+    right: -90px;
+    width: 829px;
+    height: 472px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.project-1 .project-img {
+    width: 756px;
+    height: 492px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    opacity: 1 !important;
+}
+
+/* Project 2 specific styles - Fixed to match Figma exactly */
+.project-2 .project-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.project-2 .project-info {
+    margin-top: 53px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.project-2 .image-container {
+    position: relative;
+    width: 691.44px;
+    height: 504px;
+    margin-left: 120px; /* Adjusted from 363px to match Figma spacing */
+}
+
+.project-2 .device-mockups {
+    position: absolute;
+    top: 52px;
+    left: 10PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -118px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-2 .macbook {
+    width: 571px;
+    height: 361px;
+    object-fit: fill;
+    display: block;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 2;
+}
+
+.project-2 .iphone {
+    width: 203px;
+    height: 400px;
+    object-fit: fill;
+    display: block;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 3;
+    margin-left: -118px;
+}
+
+/* About Me Section */
+.about-section .section-title {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.about-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    max-width: 988px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.about-description {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.65625em;
+    text-align: justify;
+    color: #FFFFFF;
+    max-width: 100%;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 0 292px;
+    margin-bottom: 100px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+}
+
+.contact-divider {
+    width: 696px;
+    height: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 69px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.contact-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.4263099670410155em;
+    color: #FFFFFF;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-link {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4263099034627278em;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-link:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+    .nav-container {
+        width: 100%;
+        max-width: 1160px;
+    }
+    
+    .work-section {
+        padding: 0 50px;
+    }
+    
+    .about-section {
+        padding: 0 50px;
+    }
+    
+    .contact-section {
+        padding: 0 50px;
+    }
+    
+    .image-container {
+        width: 600px;
+        height: 438px;
+    }
+    
+    .project-1 .phone-mockup {
+        right: -50px;
+        width: 700px;
+        height: 400px;
+    }
+    
+    .project-1 .project-img {
+        width: 640px;
+        height: 420px;
+    }
+    
+    .project-2 .image-container {
+        margin-left: 220px; /* Adjusted for medium screens */
+        width: 500px;
+        height: 400px;
+    }
+    
+    .project-2 .macbook {
+        width: 400px;
+        height: 250px;
+    }
+    
+    .project-2 .iphone {
+        width: 150px;
+        height: 300px;
+        margin-left: -80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-description {
+        font-size: 20px;
+    }
+    
+    .project-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .project-info {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .project-description {
+        max-width: 100%;
+    }
+    
+    .image-container {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        aspect-ratio: 1.37;
+    }
+    
+    .nav {
+        left: 20px;
+        right: 20px;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-pic {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .nav-links {
+        gap: 30px;
+    }
+    
+    .project-1 .phone-mockup {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    .project-1 .project-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .project-2 .image-container {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    .project-2 .device-mockups {
+        position: relative;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .project-2 .macbook {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-left: 0;
+    }
+    
+    .project-2 .iphone {
+        width: 150px;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-description {
+        font-size: 18px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .project-title {
+        font-size: 36px;
+    }
+    
+    .project-description {
+        font-size: 20px;
+    }
+    
+    .about-description {
+        font-size: 24px;
+    }
+    
+    .contact-title {
+        font-size: 32px;
+    }
+    
+    .contact-link {
+        font-size: 20px;
+    }
+    
+    .project-cta {
+        width: 180px;
+        height: 50px;
+    }
+    
+    .cta-text {
+        font-size: 22px;
+    }
+    
+    .cta-arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
